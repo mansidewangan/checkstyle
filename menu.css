@@ -1,0 +1,61 @@
+.menupage{
+    display: flex;
+    background-color: #373435;
+    
+}
+.list{
+    font-size: 4rem;
+    color: #F58634;
+    justify-content: center;
+    align-items: center;
+}
+
+kkkkkk
+#gallery {
+    position: relative;
+    width: 80%; /* adjust as needed */
+    margin: 0 auto; /* center the gallery */
+  }
+  
+  #slider {
+    display: flex;
+    overflow-x: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #prevButton {
+    left: 0;
+  }
+  
+  #nextButton {
+    right: 0;
+  }
+  
+
+
+
+
+
+
+
+
+

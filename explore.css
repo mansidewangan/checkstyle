@@ -1,0 +1,379 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    /* font-size: 11px; */
+  }
+  .mainbody-submit{
+    width: 85%;
+  }
+  body {
+    overflow-x: hidden;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-family: "Unbounded";
+  }
+.mv{
+    font-size: 2rem;
+}
+.portfolio {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 15rem;
+}
+.news h3, .radio h3, .award h3 {
+    font-size: 2.5rem;
+    color: #373435;
+}
+
+
+/* submit sec  */
+
+.container{
+    display: flex;
+    padding: 4rem;
+}
+.contact__wrapper{
+    display: flex;
+    width: 100%;
+}
+.contact__left{
+    flex: 1;
+    min-width: 50%;
+}
+
+
+.contact__wrapper {
+    display: flex;
+}
+
+.contact__left {
+    width: 50%;
+    flex: 1;
+}
+.contact__left p{
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 26px;
+    color: #555555;
+}
+
+.contact__right {
+    width: 50%;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.contact__left h1 {
+    font-size: 5rem;
+    line-height: 55px;
+    color: #373435;
+    font-weight: 500;
+}
+
+.box-wrapper {
+    display: flex;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+}
+
+.icon-box .icon {
+    margin-right: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    color: #ffffff;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.box-wrapper .text {
+    display: flex;
+    flex-direction: column;
+}
+.box-wrapper p{
+    padding-bottom: 0;
+    font-family: sans-serif;
+    width: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #555555;
+}
+.box-wrapper a{
+    color: #212529;
+    padding-top: 0;
+    font-size: 16px;
+    /* line-height: 24px; */
+    width: 400px;
+    color: #212529
+}
+.box-wrapper-2{
+    padding-top: 3rem;
+    display: flex;
+    padding-bottom: 3rem;
+}
+.box-wrapper-2 .title{
+    font-size: 1.6rem;
+}
+.social-share{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+.social-share ul{
+    list-style: none;
+    /* margin: 1rem; */
+    /* padding: 1rem; */
+    display: flex;
+}
+.social-share ul li i {
+    font-size: 20px; 
+    color: #828080;
+     margin: 0.7rem;
+
+}
+
+.location p{
+    padding: 0;
+    color: #555555;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}  
+
+.title {
+    font-weight: bold;
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+
+.contact__right{
+    flex: 1;
+    min-width: 50%;
+
+}
+.contact__right .title {
+    font-size: 3rem;
+}
+
+#contact-form-button {
+    background-color: orange;
+    width: auto; /* Adjust width as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 3rem;
+    color: white;
+}
+input{
+    width: 12rem;
+    height: 7vh;
+    flex-direction: column;
+}
+
+#contact-form-button:hover {
+    background-color: #ff9933; /* Darker shade of orange on hover */
+}
+/* submit sec  */
+
+
+
+
+
+/* ------print media open--------- */
+
+
+.portfolio-detail h1{
+  font-size: 5rem;
+  padding: 6rem;
+  padding-bottom: 0;
+  font-family: "Unbounded";
+}
+/* masonry layout open  */
+.masonry-layout {
+    padding: 6rem;
+    columns: 3 200px;
+    column-gap: 30px;
+    margin: 0 auto;
+  }
+  
+  
+  .masonry-layout figure img {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+/* masonry layout close  */
+  /* -----modal open----- */
+dialog {
+  width: 60%;
+  height: 75%;
+  margin: auto;
+  background-color: transparent;
+  border: 1px solid transparent;
+  animation: fade-out 0.3s ease-out;
+}
+
+dialog:-internal-dialog-in-top-layer::backdrop {
+  position: fixed;
+  inset: 0px;
+  background: rgb(0, 0, 0, 0.8) !important;
+}
+.app-modal-content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 30px);
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 767px) {
+  dialog {
+    width: 90%;
+  }
+  .portfolio-image-modal {
+    height: auto;
+  }
+}
+.app-modal-content {
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  /* top: 50%; */
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.prev{
+  margin-right: 20rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 10rem;
+  align-items: center;
+  color: #FFFFFF;
+}
+.next
+ {
+  margin-left: 20rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 10rem;
+  align-items: center;
+  color: #FFFFFF;
+}
+.close-btn{
+  font-size: 4rem;
+
+}
+
+.prev:hover,
+.next:hover
+ {
+  color: #999; /* Adjust the hover color as needed */
+}
+
+
+
+/* Animation keyframes */
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+    display: block;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    display: none;
+  }
+}
+
+@keyframes backdrop-fade-in {
+  0% {
+    background-color: rgb(0 0 0 / 0%);
+  }
+
+  100% {
+    background-color: rgb(0 0 0 / 25%);
+  }
+}
+  /* -----modal close----- */
+
+
+/* ------print media close--------- */
+
+/* -------blog page css style ------- */
+.grid-blog {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 5px; 
+  padding: 2rem;
+}
+
+.item-blog {
+  /* background-color: #ddd;  */
+  /* padding: 20px; */
+  text-align: center; 
+}
+.item-blog img{
+  width: 100%;
+  border-radius: 20px;
+}
+.item-blog button{
+  /* background-color: #F58634; */
+  color: #555555;
+  border: solid 0.1px #555555;
+  padding: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 2rem ;
+}
+.item-blog p{
+  font-family: "Unbounded";
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+/* -------blog page css style ------- */
